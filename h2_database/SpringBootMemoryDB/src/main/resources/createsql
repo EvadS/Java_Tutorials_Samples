@@ -1,0 +1,12 @@
+CREATE SCHEMA 'companydetail' ;
+
+CREATE TABLE 'companydetail'.'company' (
+'companyId' INT NOT NULL AUTO_INCREMENT COMMENT '',
+'name' VARCHAR(45) NOT NULL COMMENT '',
+'ceo' VARCHAR(45) NOT NULL COMMENT '',
+'country' VARCHAR(45)
+
+NOT NULL COMMENT '',
+'foundationYear' VARCHAR(45) NOT NULL COMMENT '',
+'noOfEmployee' VARCHAR(45) NOT NULL COMMENT '',
+PRIMARY KEY (`companyId`) COMMENT '');
