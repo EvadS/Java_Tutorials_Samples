@@ -51,7 +51,7 @@ public class CompanyDAOImplementation implements CompanyDAO
 
     @Override
     public List<Company> list() {
-        String sql = "SELECT * FROM company";
+       /* String sql = "SELECT * FROM company";
         List<Company> listCompany = jdbcTemplate.query(sql, new RowMapper<Company>() {
 
             @Override
@@ -71,6 +71,8 @@ public class CompanyDAOImplementation implements CompanyDAO
         });
 
         return listCompany;
+*/
+        return jdbcTemplate.query("select * from company", ROW_MAPPER);
     }
 
     @Override

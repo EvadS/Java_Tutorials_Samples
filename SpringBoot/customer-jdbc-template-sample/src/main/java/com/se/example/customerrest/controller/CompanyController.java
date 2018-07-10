@@ -53,7 +53,7 @@ public class CompanyController {
      * @return the list of companies.
      */
     @RequestMapping(value = "/getcompanyall/", method = RequestMethod.GET)
-    public ModelAndView getcompanyall() throws IOException
+    public List<Company> getcompanyall() throws IOException
     {
         System.out.println("Inside getCompanyAll()");
         List<Company> companyList = null;
@@ -62,10 +62,16 @@ public class CompanyController {
             companyList = companyDAO.list();
         } catch (Exception exception) {
             String errMsg = "Error getting all companies.";
-            return errorResponder(String.format(errMsg, exception.toString()));
+        //    return errorResponder(String.format(errMsg, exception.toString()));
         }
         logger_c.debug("Returing CompanyList: " + companyList.toString());
-        return new ModelAndView(jsonView, DATA_FIELD, companyList);
+
+            ModelAndView modelAndView = new ModelAndView();
+
+  
+        return companyList;
+
+       // return new ModelAndView(jsonView, DATA_FIELD, companyList);
     }
 
     /**

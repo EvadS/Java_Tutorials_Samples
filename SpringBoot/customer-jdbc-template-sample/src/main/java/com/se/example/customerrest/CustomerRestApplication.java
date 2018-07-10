@@ -34,6 +34,7 @@ public class CustomerRestApplication {
     }
 
     public static void main(String[] args) {
+
         SpringApplication.run(CustomerRestApplication.class, args);
     }
 
