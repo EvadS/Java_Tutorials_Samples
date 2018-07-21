@@ -1,9 +1,19 @@
 package com.se.agoncall.book.javaee7;
 
+
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Book {
 
+    @NotNull
     private String title;
+    @NotNull
+    @Min(2)
     private Float price;
+    @Size(max=2000 , message = "Превышен допустимы лимит для текстового поля")
+
     private String description;
     private String number;
 
