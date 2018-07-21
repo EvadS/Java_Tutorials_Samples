@@ -109,3 +109,5 @@ fabric.properties
 /h2_database/h2demo/.idea/compiler.xml
 /h2_database/h2demo/.idea
 /maven/agoncall/chapter02/.idea
+/maven/agoncall/chapter03/.idea
+/maven/agoncall/chapter03/*.iml
