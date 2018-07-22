@@ -111,3 +111,5 @@ fabric.properties
 /maven/agoncall/chapter02/.idea
 /maven/agoncall/chapter03/.idea
 /maven/agoncall/chapter03/*.iml
+/maven/agoncall/chapter04_JPA/.idea
+/maven/agoncall/chapter04_JPA/chapter04-putting-together.iml

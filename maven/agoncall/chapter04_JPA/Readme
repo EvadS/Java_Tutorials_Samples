@@ -1,0 +1,35 @@
+
+В main спользуется еденица сохраняемости chapter04PU (работающая база )
+ в тестах chapter04TestPU(in memory)
+эти две еденицы должны быть определены в файле persistence.xml (src\main\resources\META-INF)
+файл необходим согласно спецификации JPA
+
+drop-and-create таблицы  будут удалены затем вновь созданы
+
+mvn:compile
+запуск
+mvn java:exec
+
+Замечение
+1. DERBY
+
+DERBY_HOME
+F:\JAVA_DEV\db-derby-10.13.1.1-bin\db-derby-10.13.1.1-bin
+---
+
+Path
+%DERBY_HOME%\bin
+---
+запустить сервер
+F:\JAVA_DEV\db-derby-10.13.1.1-bin\db-derby-10.13.1.1-bin\bin
+startNetworkServer.bat
+
+порт 1527
+
+
+F:\JAVA_DEV\db-derby-10.13.1.1-bin\db-derby-10.13.1.1-bin\bin
+ij.bat
+
+connect 'jdbc:derby://localhost:1527/chapter04DB';
+show tables;
+describe BOOK;
