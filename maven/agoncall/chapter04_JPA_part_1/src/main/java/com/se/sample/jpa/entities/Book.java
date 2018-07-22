@@ -6,12 +6,10 @@ import javax.validation.constraints.Size;
 
 
 @Entity
-@Table(name = "tb_book")
 @NamedQueries({
         @NamedQuery(name = "findAllBooks", query = "SELECT b FROM Book b"),
         @NamedQuery(name = "findBookH2G2", query = "SELECT b FROM Book b WHERE b.title ='H2G2'")
 })
-
 public class Book {
 
   // ======================================

@@ -29,15 +29,11 @@ public class Customer {
     private String firstName;
     private String lastName;
 
-    @Column(name="phone")
     private String phoneNumber;
 
     @MinAge(message = "111111111111111111111111111111111111111111111111111111111111111111111")
     private Date dateOfBirth;
     private Date creationDate;
-
-    @Transient
-    private Integer age;
 
     public Customer() {
     }
