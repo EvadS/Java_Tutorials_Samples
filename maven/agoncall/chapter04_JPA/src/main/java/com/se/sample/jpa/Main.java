@@ -1,4 +1,6 @@
-package org.agoncal.book.javaee7.chapter04;
+package com.se.sample.jpa;
+
+import com.se.sample.jpa.entities.Book;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -11,7 +13,7 @@ public class Main {
 
     try {
       // 1-Creates an instance of book
-      org.agoncal.book.javaee7.chapter04.Book book = new Book("H2G2", "The Hitchhiker's Guide to the Galaxy", 12.5F, "1-84023-742-2", 354, false);
+      Book book = new Book("H2G2", "The Hitchhiker's Guide to the Galaxy", 12.5F, "1-84023-742-2", 354, false);
 
       // 2-Obtains an entity manager and a transaction
       EntityManagerFactory emf = Persistence.createEntityManagerFactory("chapter04PU");

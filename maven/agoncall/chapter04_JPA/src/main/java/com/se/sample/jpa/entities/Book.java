@@ -1,4 +1,4 @@
-package org.agoncal.book.javaee7.chapter04;
+package com.se.sample.jpa.entities;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

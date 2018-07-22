@@ -1,5 +1,6 @@
-package org.agoncal.book.javaee7.chapter04;
+package com.se.sample.jpa.chapter04;
 
+import com.se.sample.jpa.entities.Book;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
