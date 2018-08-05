@@ -1,4 +1,4 @@
-package com.se.example.pools;
+package com.se.example.pools.model;
 
 import org.hibernate.annotations.NaturalId;
 import javax.persistence.*;

@@ -1,7 +1,7 @@
 package com.se.example.pools.repository;
 
 
-import com.se.example.pools.User;
+import com.se.example.pools.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;

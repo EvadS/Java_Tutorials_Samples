@@ -2,8 +2,8 @@ package com.se.example.pools.repository;
 
 
 
-import com.se.example.pools.Role;
-import com.se.example.pools.RoleName;
+import com.se.example.pools.model.Role;
+import com.se.example.pools.model.RoleName;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.Optional;
