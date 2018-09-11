@@ -7,11 +7,11 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import com.example.demo.entities.Company;
-import org.jvnet.hk2.annotations.Service;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Service;
 
 @Service
 public class CompanyDAOImplementation implements CompanyDAO
